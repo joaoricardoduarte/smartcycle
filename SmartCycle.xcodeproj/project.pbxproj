@@ -1,0 +1,1597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B79A758E360F683491F0AC7 /* Pods_smartcycle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CFCBCC8D65050F1AA254B32 /* Pods_smartcycle.framework */; };
+		A121E0795497A38BD7281A18 /* Pods_SmartCycleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B88E25802FD3996A5AEB501 /* Pods_SmartCycleTests.framework */; };
+		C169050A09FA4F64AB0FEAE5 /* Pods_SmartCycleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3F4C1F81C961BB85EEC040 /* Pods_SmartCycleUITests.framework */; };
+		CF03CBEB1F33C1BB00C732B4 /* RecoverPasswordRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03CBEA1F33C1BB00C732B4 /* RecoverPasswordRequest.swift */; };
+		CF1A51941F0328F1008DF89F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A51931F0328F1008DF89F /* Utils.swift */; };
+		CF4FF6801F228DF900F00D41 /* AddParkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4FF67F1F228DF900F00D41 /* AddParkRequest.swift */; };
+		CF54EA411F04577D00F5031C /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54EA401F04577D00F5031C /* SignUpRequest.swift */; };
+		CF54EA451F046D6200F5031C /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54EA441F046D6200F5031C /* ReportViewController.swift */; };
+		CF7A3E161EFC6A390055408D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A3E151EFC6A390055408D /* HomeViewController.swift */; };
+		CF7A3E1A1EFC6AA30055408D /* Branding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A3E181EFC6AA30055408D /* Branding.swift */; };
+		CF7A3E1B1EFC6AA30055408D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A3E191EFC6AA30055408D /* Constants.swift */; };
+		CF7A3E1D1EFC71530055408D /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A3E1C1EFC71530055408D /* LoginRequest.swift */; };
+		CF7A3E391EFD61A40055408D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A3E381EFD61A40055408D /* LoginViewController.swift */; };
+		CF7A3E3B1EFD94290055408D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A3E3A1EFD94290055408D /* SignUpViewController.swift */; };
+		CF7A3E401EFDB6FF0055408D /* ParkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A3E3F1EFDB6FF0055408D /* ParkViewController.swift */; };
+		CF7B61A01F3BC3B400B3C9A7 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B619F1F3BC3B400B3C9A7 /* UserManager.swift */; };
+		CF9B9DA81EFEF52400DA5E01 /* ParkNearMeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9B9DA71EFEF52400DA5E01 /* ParkNearMeRequest.swift */; };
+		CF9B9DAB1EFF092500DA5E01 /* ParkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9B9DAA1EFF092500DA5E01 /* ParkItem.swift */; };
+		CF9B9DB31EFF1EF100DA5E01 /* ShopsNearMeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9B9DB21EFF1EF100DA5E01 /* ShopsNearMeRequest.swift */; };
+		CF9B9DB61EFF1FFF00DA5E01 /* StoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9B9DB51EFF1FFF00DA5E01 /* StoreItem.swift */; };
+		CF9B9DBC1EFF3A1E00DA5E01 /* ParkLocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9B9DBB1EFF3A1E00DA5E01 /* ParkLocationAnnotation.swift */; };
+		CF9B9DBF1EFF41B300DA5E01 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9B9DBE1EFF41B300DA5E01 /* SideMenuViewController.swift */; };
+		CF9C57B51F8A683500521BBD /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF9C57B41F8A683500521BBD /* AirshipConfig.plist */; };
+		CF9D44B21EFC65110064DB66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9D44B11EFC65110064DB66 /* AppDelegate.swift */; };
+		CF9D44B41EFC65110064DB66 /* LoginLandingViewControlle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9D44B31EFC65110064DB66 /* LoginLandingViewControlle.swift */; };
+		CF9D44B71EFC65110064DB66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9D44B51EFC65110064DB66 /* Main.storyboard */; };
+		CF9D44B91EFC65110064DB66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9D44B81EFC65110064DB66 /* Assets.xcassets */; };
+		CF9D44BC1EFC65110064DB66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9D44BA1EFC65110064DB66 /* LaunchScreen.storyboard */; };
+		CF9D44E21EFC66040064DB66 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9D44E11EFC66040064DB66 /* BaseViewController.swift */; };
+		CFABDD811F01B72000147894 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFABDD801F01B72000147894 /* ShopViewController.swift */; };
+		CFABDD841F01B76800147894 /* ShopLocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFABDD831F01B76800147894 /* ShopLocationAnnotation.swift */; };
+		CFB311151F200ABC009B00A1 /* UpdateUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB311141F200ABC009B00A1 /* UpdateUserRequest.swift */; };
+		CFF06B201F4774E4008A47EB /* UnParkBikeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF06B1F1F4774E4008A47EB /* UnParkBikeRequest.swift */; };
+		CFF3CBD41F3CE85300748BAE /* RemoveBikeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3CBD31F3CE85300748BAE /* RemoveBikeRequest.swift */; };
+		CFFAAD831F02CEEB00320076 /* BikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFAAD821F02CEEB00320076 /* BikeTableViewCell.swift */; };
+		CFFDFB071F21540500337474 /* OpeningHoursTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFDFB061F21540500337474 /* OpeningHoursTableViewCell.swift */; };
+		E81B3BFD1F4C352400D1ADBA /* AddressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3BFC1F4C352400D1ADBA /* AddressTests.swift */; };
+		E81B3BFF1F4C3DD800D1ADBA /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3BFE1F4C3DD800D1ADBA /* UserTests.swift */; };
+		E81B3C011F4C3F8F00D1ADBA /* UserManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3C001F4C3F8F00D1ADBA /* UserManagerTests.swift */; };
+		E81B3C061F4C419C00D1ADBA /* BikeItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3C051F4C419C00D1ADBA /* BikeItemTests.swift */; };
+		E81B3C091F4C74B800D1ADBA /* ShopItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3C081F4C74B800D1ADBA /* ShopItemTests.swift */; };
+		E81B3C0C1F4C756F00D1ADBA /* ParkItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3C0B1F4C756F00D1ADBA /* ParkItemTests.swift */; };
+		E81B3C0E1F4C76A400D1ADBA /* BikeParkedItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3C0D1F4C76A400D1ADBA /* BikeParkedItemTests.swift */; };
+		E81B3C121F4C786C00D1ADBA /* BrandingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3C111F4C786C00D1ADBA /* BrandingTests.swift */; };
+		E81B3C141F4C7A2200D1ADBA /* UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3C131F4C7A2200D1ADBA /* UtilsTests.swift */; };
+		E81B3C171F4C7D1B00D1ADBA /* ReportMissingBikeRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3C161F4C7D1B00D1ADBA /* ReportMissingBikeRequestTests.swift */; };
+		E81B3C1A1F4C7F1900D1ADBA /* LoginRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3C191F4C7F1900D1ADBA /* LoginRequestTests.swift */; };
+		E81B3C1C1F4C7FD600D1ADBA /* SignUpRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3C1B1F4C7FD600D1ADBA /* SignUpRequestTests.swift */; };
+		E81B3C1E1F4C80B900D1ADBA /* UpdateUserRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3C1D1F4C80B900D1ADBA /* UpdateUserRequestTests.swift */; };
+		E81B3C201F4C817E00D1ADBA /* RecoverPasswordRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3C1F1F4C817E00D1ADBA /* RecoverPasswordRequestTests.swift */; };
+		E81B3C231F4C829700D1ADBA /* ShopsNearMeRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3C221F4C829700D1ADBA /* ShopsNearMeRequestTests.swift */; };
+		E81B3C261F4C834800D1ADBA /* ParkNearMeRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3C251F4C834800D1ADBA /* ParkNearMeRequestTests.swift */; };
+		E81B3C281F4C83C000D1ADBA /* AddParkRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3C271F4C83C000D1ADBA /* AddParkRequestTests.swift */; };
+		E81B3C2B1F4C84D000D1ADBA /* AddBikeRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3C2A1F4C84D000D1ADBA /* AddBikeRequestTests.swift */; };
+		E81B3C2D1F4C859C00D1ADBA /* RemoveBikeRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3C2C1F4C859C00D1ADBA /* RemoveBikeRequestTests.swift */; };
+		E81B3C2F1F4C861300D1ADBA /* ParkBikeRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3C2E1F4C861300D1ADBA /* ParkBikeRequestTests.swift */; };
+		E81B3C311F4C870300D1ADBA /* UnparkBikeRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3C301F4C870300D1ADBA /* UnparkBikeRequestTests.swift */; };
+		E81B3C331F4C88E300D1ADBA /* LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B3C321F4C88E300D1ADBA /* LoginUITests.swift */; };
+		E81EAD7C1F570CA400B5D501 /* BaseUITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EAD7B1F570CA400B5D501 /* BaseUITestCase.swift */; };
+		E84E7BFF1F5570A50059553B /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84E7BFE1F5570A50059553B /* BaseTestCase.swift */; };
+		E84EF1FE1F1F6E8D001580AB /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EF1FD1F1F6E8D001580AB /* EditProfileViewController.swift */; };
+		E84EF2001F1FBE94001580AB /* AddParkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EF1FF1F1FBE94001580AB /* AddParkViewController.swift */; };
+		E85031421F32275400566ADE /* ReportTemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85031411F32275400566ADE /* ReportTemsViewController.swift */; };
+		E8527D9E1F3214FD0041F7E6 /* MissingBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8527D9D1F3214FD0041F7E6 /* MissingBikeViewController.swift */; };
+		E8527DA01F321C460041F7E6 /* ConfirmDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8527D9F1F321C460041F7E6 /* ConfirmDetailsViewController.swift */; };
+		E8869CF41F4208CE008017B4 /* ParkBikeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8869CF31F4208CE008017B4 /* ParkBikeRequest.swift */; };
+		E89E20D71F01462A00A826B1 /* BikeParkedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89E20D61F01462A00A826B1 /* BikeParkedItem.swift */; };
+		E89E20D91F0161E900A826B1 /* ParkedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89E20D81F0161E900A826B1 /* ParkedViewController.swift */; };
+		E89E20DE1F025C4900A826B1 /* SignUpCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89E20DD1F025C4900A826B1 /* SignUpCompleteViewController.swift */; };
+		E89E20E11F02763B00A826B1 /* AddBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89E20E01F02763B00A826B1 /* AddBikeViewController.swift */; };
+		E89E20E31F02AA5C00A826B1 /* AddBikeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89E20E21F02AA5C00A826B1 /* AddBikeRequest.swift */; };
+		E89E20E61F02AB2200A826B1 /* BikeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89E20E51F02AB2200A826B1 /* BikeItem.swift */; };
+		E89E20E81F02BD0800A826B1 /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89E20E71F02BD0800A826B1 /* LoadingOverlay.swift */; };
+		E89E20F21F03BA3D00A826B1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89E20F11F03BA3D00A826B1 /* User.swift */; };
+		E89E20F91F04006700A826B1 /* ReportMissingBikeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89E20F81F04006700A826B1 /* ReportMissingBikeRequest.swift */; };
+		E8E209551F3368D60092AFE7 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E209541F3368D60092AFE7 /* ForgotPasswordViewController.swift */; };
+		E8E2258E1F27A40700DD3E4D /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E2258D1F27A40700DD3E4D /* Address.swift */; };
+		E8F3C09D1F18D04A008FA864 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F3C09C1F18D04A008FA864 /* MapViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF9D44C31EFC65110064DB66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF9D44A61EFC65110064DB66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF9D44AD1EFC65110064DB66;
+			remoteInfo = SmartCycle;
+		};
+		CF9D44CE1EFC65110064DB66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF9D44A61EFC65110064DB66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF9D44AD1EFC65110064DB66;
+			remoteInfo = SmartCycle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1698C01FD6987FD24CD9704E /* Pods-SmartCycleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCycleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCycleUITests/Pods-SmartCycleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1CFCBCC8D65050F1AA254B32 /* Pods_smartcycle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smartcycle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21585A7EA201C127E6F069CB /* Pods-SmartCycleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCycleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCycleTests/Pods-SmartCycleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F1BA224035D451DA29BFB75 /* Pods-SmartCycleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCycleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCycleTests/Pods-SmartCycleTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D3D76DD33AD6C76901CB851 /* Pods-SmartCycleUITests.inhouse.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCycleUITests.inhouse.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCycleUITests/Pods-SmartCycleUITests.inhouse.xcconfig"; sourceTree = "<group>"; };
+		8B88E25802FD3996A5AEB501 /* Pods_SmartCycleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartCycleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E3BDBFBA491BF8620058BB6 /* Pods-SmartCycleTests.inhouse.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCycleTests.inhouse.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCycleTests/Pods-SmartCycleTests.inhouse.xcconfig"; sourceTree = "<group>"; };
+		94905ECE6BA3C2354E32D9A2 /* Pods-smartcycle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartcycle.release.xcconfig"; path = "Pods/Target Support Files/Pods-smartcycle/Pods-smartcycle.release.xcconfig"; sourceTree = "<group>"; };
+		9E3F4C1F81C961BB85EEC040 /* Pods_SmartCycleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartCycleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3859BA82AA3CDE90AE22172 /* Pods-SmartCycleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCycleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCycleUITests/Pods-SmartCycleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF03CBEA1F33C1BB00C732B4 /* RecoverPasswordRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecoverPasswordRequest.swift; sourceTree = "<group>"; };
+		CF1A51931F0328F1008DF89F /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CF4FF67F1F228DF900F00D41 /* AddParkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddParkRequest.swift; sourceTree = "<group>"; };
+		CF54EA401F04577D00F5031C /* SignUpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
+		CF54EA441F046D6200F5031C /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		CF7A3E151EFC6A390055408D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CF7A3E181EFC6AA30055408D /* Branding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Branding.swift; sourceTree = "<group>"; };
+		CF7A3E191EFC6AA30055408D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CF7A3E1C1EFC71530055408D /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		CF7A3E301EFC86360055408D /* Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
+		CF7A3E381EFD61A40055408D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CF7A3E3A1EFD94290055408D /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CF7A3E3F1EFDB6FF0055408D /* ParkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkViewController.swift; sourceTree = "<group>"; };
+		CF7B619F1F3BC3B400B3C9A7 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		CF8D41B51F8958FF002C3CFF /* smartcycle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = smartcycle.entitlements; sourceTree = "<group>"; };
+		CF9B9DA71EFEF52400DA5E01 /* ParkNearMeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkNearMeRequest.swift; sourceTree = "<group>"; };
+		CF9B9DAA1EFF092500DA5E01 /* ParkItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkItem.swift; sourceTree = "<group>"; };
+		CF9B9DB21EFF1EF100DA5E01 /* ShopsNearMeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopsNearMeRequest.swift; sourceTree = "<group>"; };
+		CF9B9DB51EFF1FFF00DA5E01 /* StoreItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreItem.swift; sourceTree = "<group>"; };
+		CF9B9DBB1EFF3A1E00DA5E01 /* ParkLocationAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkLocationAnnotation.swift; sourceTree = "<group>"; };
+		CF9B9DBE1EFF41B300DA5E01 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		CF9C57B41F8A683500521BBD /* AirshipConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AirshipConfig.plist; sourceTree = "<group>"; };
+		CF9D44AE1EFC65110064DB66 /* smartcycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartcycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF9D44B11EFC65110064DB66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF9D44B31EFC65110064DB66 /* LoginLandingViewControlle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLandingViewControlle.swift; sourceTree = "<group>"; };
+		CF9D44B61EFC65110064DB66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF9D44B81EFC65110064DB66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF9D44BB1EFC65110064DB66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF9D44BD1EFC65110064DB66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF9D44C21EFC65110064DB66 /* SmartCycleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartCycleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF9D44C81EFC65110064DB66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF9D44CD1EFC65110064DB66 /* SmartCycleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartCycleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF9D44D31EFC65110064DB66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF9D44E11EFC66040064DB66 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CFABDD801F01B72000147894 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		CFABDD831F01B76800147894 /* ShopLocationAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopLocationAnnotation.swift; sourceTree = "<group>"; };
+		CFB311141F200ABC009B00A1 /* UpdateUserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateUserRequest.swift; sourceTree = "<group>"; };
+		CFF06B1F1F4774E4008A47EB /* UnParkBikeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnParkBikeRequest.swift; sourceTree = "<group>"; };
+		CFF3CBD31F3CE85300748BAE /* RemoveBikeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveBikeRequest.swift; sourceTree = "<group>"; };
+		CFFAAD821F02CEEB00320076 /* BikeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeTableViewCell.swift; sourceTree = "<group>"; };
+		CFFDFB061F21540500337474 /* OpeningHoursTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpeningHoursTableViewCell.swift; sourceTree = "<group>"; };
+		E7359818CB7EB39451BD48F6 /* Pods-smartcycle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartcycle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smartcycle/Pods-smartcycle.debug.xcconfig"; sourceTree = "<group>"; };
+		E81B3BFC1F4C352400D1ADBA /* AddressTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressTests.swift; sourceTree = "<group>"; };
+		E81B3BFE1F4C3DD800D1ADBA /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
+		E81B3C001F4C3F8F00D1ADBA /* UserManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManagerTests.swift; sourceTree = "<group>"; };
+		E81B3C051F4C419C00D1ADBA /* BikeItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeItemTests.swift; sourceTree = "<group>"; };
+		E81B3C081F4C74B800D1ADBA /* ShopItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopItemTests.swift; sourceTree = "<group>"; };
+		E81B3C0B1F4C756F00D1ADBA /* ParkItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkItemTests.swift; sourceTree = "<group>"; };
+		E81B3C0D1F4C76A400D1ADBA /* BikeParkedItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeParkedItemTests.swift; sourceTree = "<group>"; };
+		E81B3C111F4C786C00D1ADBA /* BrandingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrandingTests.swift; sourceTree = "<group>"; };
+		E81B3C131F4C7A2200D1ADBA /* UtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsTests.swift; sourceTree = "<group>"; };
+		E81B3C161F4C7D1B00D1ADBA /* ReportMissingBikeRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportMissingBikeRequestTests.swift; sourceTree = "<group>"; };
+		E81B3C191F4C7F1900D1ADBA /* LoginRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequestTests.swift; sourceTree = "<group>"; };
+		E81B3C1B1F4C7FD600D1ADBA /* SignUpRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpRequestTests.swift; sourceTree = "<group>"; };
+		E81B3C1D1F4C80B900D1ADBA /* UpdateUserRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateUserRequestTests.swift; sourceTree = "<group>"; };
+		E81B3C1F1F4C817E00D1ADBA /* RecoverPasswordRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecoverPasswordRequestTests.swift; sourceTree = "<group>"; };
+		E81B3C221F4C829700D1ADBA /* ShopsNearMeRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopsNearMeRequestTests.swift; sourceTree = "<group>"; };
+		E81B3C251F4C834800D1ADBA /* ParkNearMeRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkNearMeRequestTests.swift; sourceTree = "<group>"; };
+		E81B3C271F4C83C000D1ADBA /* AddParkRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddParkRequestTests.swift; sourceTree = "<group>"; };
+		E81B3C2A1F4C84D000D1ADBA /* AddBikeRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBikeRequestTests.swift; sourceTree = "<group>"; };
+		E81B3C2C1F4C859C00D1ADBA /* RemoveBikeRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveBikeRequestTests.swift; sourceTree = "<group>"; };
+		E81B3C2E1F4C861300D1ADBA /* ParkBikeRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkBikeRequestTests.swift; sourceTree = "<group>"; };
+		E81B3C301F4C870300D1ADBA /* UnparkBikeRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnparkBikeRequestTests.swift; sourceTree = "<group>"; };
+		E81B3C321F4C88E300D1ADBA /* LoginUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUITests.swift; sourceTree = "<group>"; };
+		E81EAD7B1F570CA400B5D501 /* BaseUITestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUITestCase.swift; sourceTree = "<group>"; };
+		E84E7BFE1F5570A50059553B /* BaseTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
+		E84EF1FD1F1F6E8D001580AB /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		E84EF1FF1F1FBE94001580AB /* AddParkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddParkViewController.swift; sourceTree = "<group>"; };
+		E85031411F32275400566ADE /* ReportTemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportTemsViewController.swift; sourceTree = "<group>"; };
+		E8527D9D1F3214FD0041F7E6 /* MissingBikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissingBikeViewController.swift; sourceTree = "<group>"; };
+		E8527D9F1F321C460041F7E6 /* ConfirmDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmDetailsViewController.swift; sourceTree = "<group>"; };
+		E8869CF31F4208CE008017B4 /* ParkBikeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkBikeRequest.swift; sourceTree = "<group>"; };
+		E89E20D61F01462A00A826B1 /* BikeParkedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeParkedItem.swift; sourceTree = "<group>"; };
+		E89E20D81F0161E900A826B1 /* ParkedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkedViewController.swift; sourceTree = "<group>"; };
+		E89E20DD1F025C4900A826B1 /* SignUpCompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpCompleteViewController.swift; sourceTree = "<group>"; };
+		E89E20E01F02763B00A826B1 /* AddBikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBikeViewController.swift; sourceTree = "<group>"; };
+		E89E20E21F02AA5C00A826B1 /* AddBikeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBikeRequest.swift; sourceTree = "<group>"; };
+		E89E20E51F02AB2200A826B1 /* BikeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeItem.swift; sourceTree = "<group>"; };
+		E89E20E71F02BD0800A826B1 /* LoadingOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
+		E89E20F11F03BA3D00A826B1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E89E20F81F04006700A826B1 /* ReportMissingBikeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportMissingBikeRequest.swift; sourceTree = "<group>"; };
+		E8E209541F3368D60092AFE7 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		E8E2258D1F27A40700DD3E4D /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		E8F3C09C1F18D04A008FA864 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F7C39944ED03DF56CA8D066C /* Pods-smartcycle.inhouse.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartcycle.inhouse.xcconfig"; path = "Pods/Target Support Files/Pods-smartcycle/Pods-smartcycle.inhouse.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF9D44AB1EFC65110064DB66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B79A758E360F683491F0AC7 /* Pods_smartcycle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF9D44BF1EFC65110064DB66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A121E0795497A38BD7281A18 /* Pods_SmartCycleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF9D44CA1EFC65110064DB66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C169050A09FA4F64AB0FEAE5 /* Pods_SmartCycleUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E0DD0276D4DE54C3B653D33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B88E25802FD3996A5AEB501 /* Pods_SmartCycleTests.framework */,
+				9E3F4C1F81C961BB85EEC040 /* Pods_SmartCycleUITests.framework */,
+				1CFCBCC8D65050F1AA254B32 /* Pods_smartcycle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0445384198AAE419BA053D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21585A7EA201C127E6F069CB /* Pods-SmartCycleTests.debug.xcconfig */,
+				3F1BA224035D451DA29BFB75 /* Pods-SmartCycleTests.release.xcconfig */,
+				8E3BDBFBA491BF8620058BB6 /* Pods-SmartCycleTests.inhouse.xcconfig */,
+				A3859BA82AA3CDE90AE22172 /* Pods-SmartCycleUITests.debug.xcconfig */,
+				1698C01FD6987FD24CD9704E /* Pods-SmartCycleUITests.release.xcconfig */,
+				5D3D76DD33AD6C76901CB851 /* Pods-SmartCycleUITests.inhouse.xcconfig */,
+				E7359818CB7EB39451BD48F6 /* Pods-smartcycle.debug.xcconfig */,
+				94905ECE6BA3C2354E32D9A2 /* Pods-smartcycle.release.xcconfig */,
+				F7C39944ED03DF56CA8D066C /* Pods-smartcycle.inhouse.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF54EA431F046D4300F5031C /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				CF54EA441F046D6200F5031C /* ReportViewController.swift */,
+				E8527D9D1F3214FD0041F7E6 /* MissingBikeViewController.swift */,
+				E8527D9F1F321C460041F7E6 /* ConfirmDetailsViewController.swift */,
+				E85031411F32275400566ADE /* ReportTemsViewController.swift */,
+			);
+			name = Report;
+			sourceTree = "<group>";
+		};
+		CF7A3E141EFC6A260055408D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CF7A3E151EFC6A390055408D /* HomeViewController.swift */,
+				E8F3C09C1F18D04A008FA864 /* MapViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		CF7A3E171EFC6A940055408D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CF7A3E181EFC6AA30055408D /* Branding.swift */,
+				CF7A3E191EFC6AA30055408D /* Constants.swift */,
+				CF1A51931F0328F1008DF89F /* Utils.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		CF7A3E1E1EFC85E40055408D /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = SOURCE_ROOT;
+		};
+		CF7A3E311EFC88B70055408D /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				E89E20F71F04004C00A826B1 /* Report */,
+				E89E20F31F03CDEE00A826B1 /* Login */,
+				E89E20F51F03CE0C00A826B1 /* Parks */,
+				E89E20F61F03CE1300A826B1 /* Shops */,
+				E89E20F41F03CDF700A826B1 /* Bikes */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		CF7A3E341EFD580E0055408D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = SOURCE_ROOT;
+		};
+		CF7A3E3C1EFDAAC90055408D /* Parks */ = {
+			isa = PBXGroup;
+			children = (
+				CF7A3E3F1EFDB6FF0055408D /* ParkViewController.swift */,
+				E89E20D81F0161E900A826B1 /* ParkedViewController.swift */,
+				E84EF1FF1F1FBE94001580AB /* AddParkViewController.swift */,
+			);
+			name = Parks;
+			sourceTree = "<group>";
+		};
+		CF9B9DA91EFF090F00DA5E01 /* Park */ = {
+			isa = PBXGroup;
+			children = (
+				CF9B9DAA1EFF092500DA5E01 /* ParkItem.swift */,
+				E89E20D61F01462A00A826B1 /* BikeParkedItem.swift */,
+			);
+			name = Park;
+			sourceTree = "<group>";
+		};
+		CF9B9DB41EFF1FD400DA5E01 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				CF9B9DB51EFF1FFF00DA5E01 /* StoreItem.swift */,
+			);
+			name = Shop;
+			sourceTree = "<group>";
+		};
+		CF9B9DB71EFF2DE100DA5E01 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E8527D971F31DDE70041F7E6 /* Annotations */,
+				E89E20E91F02BD0D00A826B1 /* Loading */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CF9D44A51EFC65110064DB66 = {
+			isa = PBXGroup;
+			children = (
+				CF9D44B01EFC65110064DB66 /* SmartCycle */,
+				CF9D44C51EFC65110064DB66 /* SmartCycleTests */,
+				CF9D44D01EFC65110064DB66 /* SmartCycleUITests */,
+				CF9D44AF1EFC65110064DB66 /* Products */,
+				C0445384198AAE419BA053D8 /* Pods */,
+				2E0DD0276D4DE54C3B653D33 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF9D44AF1EFC65110064DB66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF9D44AE1EFC65110064DB66 /* smartcycle.app */,
+				CF9D44C21EFC65110064DB66 /* SmartCycleTests.xctest */,
+				CF9D44CD1EFC65110064DB66 /* SmartCycleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF9D44B01EFC65110064DB66 /* SmartCycle */ = {
+			isa = PBXGroup;
+			children = (
+				CF9D44B11EFC65110064DB66 /* AppDelegate.swift */,
+				CF9D44B51EFC65110064DB66 /* Main.storyboard */,
+				CF9D44DF1EFC657B0064DB66 /* View Controllers */,
+				CF9B9DB71EFF2DE100DA5E01 /* Views */,
+				CF9D44E41EFC66210064DB66 /* Model */,
+				CF7A3E171EFC6A940055408D /* Utilities */,
+				CF7A3E1E1EFC85E40055408D /* Vendor */,
+				CF7A3E341EFD580E0055408D /* Assets */,
+				CF8D41B51F8958FF002C3CFF /* smartcycle.entitlements */,
+				CF9D44B81EFC65110064DB66 /* Assets.xcassets */,
+				CF9D44BA1EFC65110064DB66 /* LaunchScreen.storyboard */,
+				CF7A3E301EFC86360055408D /* Bridging_Header.h */,
+				CF9D44BD1EFC65110064DB66 /* Info.plist */,
+				CF9C57B41F8A683500521BBD /* AirshipConfig.plist */,
+			);
+			path = SmartCycle;
+			sourceTree = "<group>";
+		};
+		CF9D44C51EFC65110064DB66 /* SmartCycleTests */ = {
+			isa = PBXGroup;
+			children = (
+				E84E7BFD1F5570660059553B /* Base */,
+				E81B3C021F4C3FC800D1ADBA /* Address */,
+				E81B3C031F4C3FD200D1ADBA /* User */,
+				E81B3C041F4C418A00D1ADBA /* Bike */,
+				E81B3C071F4C749E00D1ADBA /* Shop */,
+				E81B3C0A1F4C755E00D1ADBA /* Park */,
+				E81B3C101F4C785800D1ADBA /* Utilities */,
+				E81B3C0F1F4C779000D1ADBA /* Requests */,
+				CF9D44C81EFC65110064DB66 /* Info.plist */,
+			);
+			path = SmartCycleTests;
+			sourceTree = "<group>";
+		};
+		CF9D44D01EFC65110064DB66 /* SmartCycleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E81EAD7B1F570CA400B5D501 /* BaseUITestCase.swift */,
+				CF9D44D31EFC65110064DB66 /* Info.plist */,
+				E81B3C321F4C88E300D1ADBA /* LoginUITests.swift */,
+			);
+			path = SmartCycleUITests;
+			sourceTree = "<group>";
+		};
+		CF9D44DF1EFC657B0064DB66 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF9D44E01EFC65DC0064DB66 /* Base */,
+				CF9D44E31EFC66080064DB66 /* Login */,
+				CF7A3E141EFC6A260055408D /* Home */,
+				E89E20DF1F0275FD00A826B1 /* Profile */,
+				CF7A3E3C1EFDAAC90055408D /* Parks */,
+				CFABDD7C1F01B4E500147894 /* Shops */,
+				CF54EA431F046D4300F5031C /* Report */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CF9D44E01EFC65DC0064DB66 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CF9D44E11EFC66040064DB66 /* BaseViewController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		CF9D44E31EFC66080064DB66 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CF9D44B31EFC65110064DB66 /* LoginLandingViewControlle.swift */,
+				CF7A3E381EFD61A40055408D /* LoginViewController.swift */,
+				CF7A3E3A1EFD94290055408D /* SignUpViewController.swift */,
+				E89E20DD1F025C4900A826B1 /* SignUpCompleteViewController.swift */,
+				E8E209541F3368D60092AFE7 /* ForgotPasswordViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		CF9D44E41EFC66210064DB66 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8E2258C1F27A3EA00DD3E4D /* Address */,
+				E89E20F01F03BA2300A826B1 /* User */,
+				E89E20E41F02AB0100A826B1 /* Bike */,
+				CF9B9DB41EFF1FD400DA5E01 /* Shop */,
+				CF9B9DA91EFF090F00DA5E01 /* Park */,
+				CF7A3E311EFC88B70055408D /* Requests */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CFABDD7C1F01B4E500147894 /* Shops */ = {
+			isa = PBXGroup;
+			children = (
+				CFFDFB051F2153D400337474 /* Cells */,
+				CFABDD801F01B72000147894 /* ShopViewController.swift */,
+			);
+			name = Shops;
+			sourceTree = "<group>";
+		};
+		CFFAAD841F02CEF800320076 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CFFAAD821F02CEEB00320076 /* BikeTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		CFFDFB051F2153D400337474 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CFFDFB061F21540500337474 /* OpeningHoursTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		E81B3C021F4C3FC800D1ADBA /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				E81B3BFC1F4C352400D1ADBA /* AddressTests.swift */,
+			);
+			name = Address;
+			sourceTree = "<group>";
+		};
+		E81B3C031F4C3FD200D1ADBA /* User */ = {
+			isa = PBXGroup;
+			children = (
+				E81B3BFE1F4C3DD800D1ADBA /* UserTests.swift */,
+				E81B3C001F4C3F8F00D1ADBA /* UserManagerTests.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		E81B3C041F4C418A00D1ADBA /* Bike */ = {
+			isa = PBXGroup;
+			children = (
+				E81B3C051F4C419C00D1ADBA /* BikeItemTests.swift */,
+			);
+			name = Bike;
+			sourceTree = "<group>";
+		};
+		E81B3C071F4C749E00D1ADBA /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				E81B3C081F4C74B800D1ADBA /* ShopItemTests.swift */,
+			);
+			name = Shop;
+			sourceTree = "<group>";
+		};
+		E81B3C0A1F4C755E00D1ADBA /* Park */ = {
+			isa = PBXGroup;
+			children = (
+				E81B3C0B1F4C756F00D1ADBA /* ParkItemTests.swift */,
+				E81B3C0D1F4C76A400D1ADBA /* BikeParkedItemTests.swift */,
+			);
+			name = Park;
+			sourceTree = "<group>";
+		};
+		E81B3C0F1F4C779000D1ADBA /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				E81B3C151F4C7D0800D1ADBA /* Report */,
+				E81B3C181F4C7EED00D1ADBA /* Login */,
+				E81B3C241F4C832C00D1ADBA /* Parks */,
+				E81B3C211F4C828100D1ADBA /* Shops */,
+				E81B3C291F4C84A800D1ADBA /* Bikes */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		E81B3C101F4C785800D1ADBA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E81B3C111F4C786C00D1ADBA /* BrandingTests.swift */,
+				E81B3C131F4C7A2200D1ADBA /* UtilsTests.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		E81B3C151F4C7D0800D1ADBA /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				E81B3C161F4C7D1B00D1ADBA /* ReportMissingBikeRequestTests.swift */,
+			);
+			name = Report;
+			sourceTree = "<group>";
+		};
+		E81B3C181F4C7EED00D1ADBA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E81B3C191F4C7F1900D1ADBA /* LoginRequestTests.swift */,
+				E81B3C1B1F4C7FD600D1ADBA /* SignUpRequestTests.swift */,
+				E81B3C1D1F4C80B900D1ADBA /* UpdateUserRequestTests.swift */,
+				E81B3C1F1F4C817E00D1ADBA /* RecoverPasswordRequestTests.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		E81B3C211F4C828100D1ADBA /* Shops */ = {
+			isa = PBXGroup;
+			children = (
+				E81B3C221F4C829700D1ADBA /* ShopsNearMeRequestTests.swift */,
+			);
+			name = Shops;
+			sourceTree = "<group>";
+		};
+		E81B3C241F4C832C00D1ADBA /* Parks */ = {
+			isa = PBXGroup;
+			children = (
+				E81B3C251F4C834800D1ADBA /* ParkNearMeRequestTests.swift */,
+				E81B3C271F4C83C000D1ADBA /* AddParkRequestTests.swift */,
+			);
+			name = Parks;
+			sourceTree = "<group>";
+		};
+		E81B3C291F4C84A800D1ADBA /* Bikes */ = {
+			isa = PBXGroup;
+			children = (
+				E81B3C2A1F4C84D000D1ADBA /* AddBikeRequestTests.swift */,
+				E81B3C2C1F4C859C00D1ADBA /* RemoveBikeRequestTests.swift */,
+				E81B3C2E1F4C861300D1ADBA /* ParkBikeRequestTests.swift */,
+				E81B3C301F4C870300D1ADBA /* UnparkBikeRequestTests.swift */,
+			);
+			name = Bikes;
+			sourceTree = "<group>";
+		};
+		E84E7BFD1F5570660059553B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E84E7BFE1F5570A50059553B /* BaseTestCase.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		E8527D971F31DDE70041F7E6 /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				CFABDD831F01B76800147894 /* ShopLocationAnnotation.swift */,
+				CF9B9DBB1EFF3A1E00DA5E01 /* ParkLocationAnnotation.swift */,
+			);
+			name = Annotations;
+			sourceTree = "<group>";
+		};
+		E89E20DF1F0275FD00A826B1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CFFAAD841F02CEF800320076 /* Cells */,
+				CF9B9DBE1EFF41B300DA5E01 /* SideMenuViewController.swift */,
+				E89E20E01F02763B00A826B1 /* AddBikeViewController.swift */,
+				E84EF1FD1F1F6E8D001580AB /* EditProfileViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		E89E20E41F02AB0100A826B1 /* Bike */ = {
+			isa = PBXGroup;
+			children = (
+				E89E20E51F02AB2200A826B1 /* BikeItem.swift */,
+			);
+			name = Bike;
+			sourceTree = "<group>";
+		};
+		E89E20E91F02BD0D00A826B1 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				E89E20E71F02BD0800A826B1 /* LoadingOverlay.swift */,
+			);
+			name = Loading;
+			sourceTree = "<group>";
+		};
+		E89E20F01F03BA2300A826B1 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B619F1F3BC3B400B3C9A7 /* UserManager.swift */,
+				E89E20F11F03BA3D00A826B1 /* User.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		E89E20F31F03CDEE00A826B1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CF7A3E1C1EFC71530055408D /* LoginRequest.swift */,
+				CF54EA401F04577D00F5031C /* SignUpRequest.swift */,
+				CFB311141F200ABC009B00A1 /* UpdateUserRequest.swift */,
+				CF03CBEA1F33C1BB00C732B4 /* RecoverPasswordRequest.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		E89E20F41F03CDF700A826B1 /* Bikes */ = {
+			isa = PBXGroup;
+			children = (
+				E89E20E21F02AA5C00A826B1 /* AddBikeRequest.swift */,
+				CFF3CBD31F3CE85300748BAE /* RemoveBikeRequest.swift */,
+				E8869CF31F4208CE008017B4 /* ParkBikeRequest.swift */,
+				CFF06B1F1F4774E4008A47EB /* UnParkBikeRequest.swift */,
+			);
+			name = Bikes;
+			sourceTree = "<group>";
+		};
+		E89E20F51F03CE0C00A826B1 /* Parks */ = {
+			isa = PBXGroup;
+			children = (
+				CF9B9DA71EFEF52400DA5E01 /* ParkNearMeRequest.swift */,
+				CF4FF67F1F228DF900F00D41 /* AddParkRequest.swift */,
+			);
+			name = Parks;
+			sourceTree = "<group>";
+		};
+		E89E20F61F03CE1300A826B1 /* Shops */ = {
+			isa = PBXGroup;
+			children = (
+				CF9B9DB21EFF1EF100DA5E01 /* ShopsNearMeRequest.swift */,
+			);
+			name = Shops;
+			sourceTree = "<group>";
+		};
+		E89E20F71F04004C00A826B1 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				E89E20F81F04006700A826B1 /* ReportMissingBikeRequest.swift */,
+			);
+			name = Report;
+			sourceTree = "<group>";
+		};
+		E8E2258C1F27A3EA00DD3E4D /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				E8E2258D1F27A40700DD3E4D /* Address.swift */,
+			);
+			name = Address;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF9D44AD1EFC65110064DB66 /* smartcycle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF9D44D61EFC65110064DB66 /* Build configuration list for PBXNativeTarget "smartcycle" */;
+			buildPhases = (
+				913C192F1696F053A281427B /* [CP] Check Pods Manifest.lock */,
+				CF9D44AA1EFC65110064DB66 /* Sources */,
+				CF9D44AB1EFC65110064DB66 /* Frameworks */,
+				CF9D44AC1EFC65110064DB66 /* Resources */,
+				CF4DEB1A1F2A965500EDC390 /* Increment Build */,
+				E8BDC113C0F92D228A2160A6 /* [CP] Embed Pods Frameworks */,
+				B900D93FE0AADEB918027CE4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = smartcycle;
+			productName = SmartCycle;
+			productReference = CF9D44AE1EFC65110064DB66 /* smartcycle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF9D44C11EFC65110064DB66 /* SmartCycleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF9D44D91EFC65110064DB66 /* Build configuration list for PBXNativeTarget "SmartCycleTests" */;
+			buildPhases = (
+				A8951618550E6C41708BAB2D /* [CP] Check Pods Manifest.lock */,
+				CF9D44BE1EFC65110064DB66 /* Sources */,
+				CF9D44BF1EFC65110064DB66 /* Frameworks */,
+				CF9D44C01EFC65110064DB66 /* Resources */,
+				4FF7C1A9F61992B0B16A3614 /* [CP] Embed Pods Frameworks */,
+				7E6D40DA4AC60F2BB4916499 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF9D44C41EFC65110064DB66 /* PBXTargetDependency */,
+			);
+			name = SmartCycleTests;
+			productName = SmartCycleTests;
+			productReference = CF9D44C21EFC65110064DB66 /* SmartCycleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF9D44CC1EFC65110064DB66 /* SmartCycleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF9D44DC1EFC65110064DB66 /* Build configuration list for PBXNativeTarget "SmartCycleUITests" */;
+			buildPhases = (
+				873040CDD836CD05E940E016 /* [CP] Check Pods Manifest.lock */,
+				CF9D44C91EFC65110064DB66 /* Sources */,
+				CF9D44CA1EFC65110064DB66 /* Frameworks */,
+				CF9D44CB1EFC65110064DB66 /* Resources */,
+				AA280A970E4625CAC625E3F0 /* [CP] Embed Pods Frameworks */,
+				C2449A7A72D975CCB3B4BDA9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF9D44CF1EFC65110064DB66 /* PBXTargetDependency */,
+			);
+			name = SmartCycleUITests;
+			productName = SmartCycleUITests;
+			productReference = CF9D44CD1EFC65110064DB66 /* SmartCycleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF9D44A61EFC65110064DB66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Joao Duarte";
+				TargetAttributes = {
+					CF9D44AD1EFC65110064DB66 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = T7PE3377SX;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					CF9D44C11EFC65110064DB66 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = T7PE3377SX;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CF9D44AD1EFC65110064DB66;
+					};
+					CF9D44CC1EFC65110064DB66 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = T7PE3377SX;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CF9D44AD1EFC65110064DB66;
+					};
+				};
+			};
+			buildConfigurationList = CF9D44A91EFC65110064DB66 /* Build configuration list for PBXProject "SmartCycle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF9D44A51EFC65110064DB66;
+			productRefGroup = CF9D44AF1EFC65110064DB66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF9D44AD1EFC65110064DB66 /* smartcycle */,
+				CF9D44C11EFC65110064DB66 /* SmartCycleTests */,
+				CF9D44CC1EFC65110064DB66 /* SmartCycleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF9D44AC1EFC65110064DB66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF9D44BC1EFC65110064DB66 /* LaunchScreen.storyboard in Resources */,
+				CF9D44B91EFC65110064DB66 /* Assets.xcassets in Resources */,
+				CF9D44B71EFC65110064DB66 /* Main.storyboard in Resources */,
+				CF9C57B51F8A683500521BBD /* AirshipConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF9D44C01EFC65110064DB66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF9D44CB1EFC65110064DB66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FF7C1A9F61992B0B16A3614 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartCycleTests/Pods-SmartCycleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E6D40DA4AC60F2BB4916499 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartCycleTests/Pods-SmartCycleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		873040CDD836CD05E940E016 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartCycleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		913C192F1696F053A281427B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-smartcycle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8951618550E6C41708BAB2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartCycleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA280A970E4625CAC625E3F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartCycleUITests/Pods-SmartCycleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B900D93FE0AADEB918027CE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-smartcycle/Pods-smartcycle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2449A7A72D975CCB3B4BDA9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartCycleUITests/Pods-SmartCycleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF4DEB1A1F2A965500EDC390 /* Increment Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+		E8BDC113C0F92D228A2160A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-smartcycle/Pods-smartcycle-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cloudinary/Cloudinary.framework",
+				"${BUILT_PRODUCTS_DIR}/DGActivityIndicatorView/DGActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/ReachabilitySwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/UrbanAirship-iOS-SDK/AirshipKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cloudinary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReachabilitySwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AirshipKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-smartcycle/Pods-smartcycle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF9D44AA1EFC65110064DB66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E89E20DE1F025C4900A826B1 /* SignUpCompleteViewController.swift in Sources */,
+				E89E20D91F0161E900A826B1 /* ParkedViewController.swift in Sources */,
+				CFF06B201F4774E4008A47EB /* UnParkBikeRequest.swift in Sources */,
+				CF7A3E391EFD61A40055408D /* LoginViewController.swift in Sources */,
+				E8527D9E1F3214FD0041F7E6 /* MissingBikeViewController.swift in Sources */,
+				CF1A51941F0328F1008DF89F /* Utils.swift in Sources */,
+				CF7A3E161EFC6A390055408D /* HomeViewController.swift in Sources */,
+				CF03CBEB1F33C1BB00C732B4 /* RecoverPasswordRequest.swift in Sources */,
+				E84EF1FE1F1F6E8D001580AB /* EditProfileViewController.swift in Sources */,
+				CF9D44B41EFC65110064DB66 /* LoginLandingViewControlle.swift in Sources */,
+				E8869CF41F4208CE008017B4 /* ParkBikeRequest.swift in Sources */,
+				CFFAAD831F02CEEB00320076 /* BikeTableViewCell.swift in Sources */,
+				E8F3C09D1F18D04A008FA864 /* MapViewController.swift in Sources */,
+				CF9D44B21EFC65110064DB66 /* AppDelegate.swift in Sources */,
+				CF9B9DBC1EFF3A1E00DA5E01 /* ParkLocationAnnotation.swift in Sources */,
+				CF9B9DBF1EFF41B300DA5E01 /* SideMenuViewController.swift in Sources */,
+				E89E20E31F02AA5C00A826B1 /* AddBikeRequest.swift in Sources */,
+				CFABDD841F01B76800147894 /* ShopLocationAnnotation.swift in Sources */,
+				E89E20D71F01462A00A826B1 /* BikeParkedItem.swift in Sources */,
+				E8527DA01F321C460041F7E6 /* ConfirmDetailsViewController.swift in Sources */,
+				CFABDD811F01B72000147894 /* ShopViewController.swift in Sources */,
+				E89E20F21F03BA3D00A826B1 /* User.swift in Sources */,
+				E85031421F32275400566ADE /* ReportTemsViewController.swift in Sources */,
+				E89E20F91F04006700A826B1 /* ReportMissingBikeRequest.swift in Sources */,
+				CF54EA451F046D6200F5031C /* ReportViewController.swift in Sources */,
+				E84EF2001F1FBE94001580AB /* AddParkViewController.swift in Sources */,
+				CF54EA411F04577D00F5031C /* SignUpRequest.swift in Sources */,
+				CF7B61A01F3BC3B400B3C9A7 /* UserManager.swift in Sources */,
+				CF7A3E3B1EFD94290055408D /* SignUpViewController.swift in Sources */,
+				CF7A3E1B1EFC6AA30055408D /* Constants.swift in Sources */,
+				CF9B9DB61EFF1FFF00DA5E01 /* StoreItem.swift in Sources */,
+				CF7A3E1A1EFC6AA30055408D /* Branding.swift in Sources */,
+				CFB311151F200ABC009B00A1 /* UpdateUserRequest.swift in Sources */,
+				E89E20E11F02763B00A826B1 /* AddBikeViewController.swift in Sources */,
+				E89E20E81F02BD0800A826B1 /* LoadingOverlay.swift in Sources */,
+				E8E2258E1F27A40700DD3E4D /* Address.swift in Sources */,
+				CF9B9DA81EFEF52400DA5E01 /* ParkNearMeRequest.swift in Sources */,
+				CF9D44E21EFC66040064DB66 /* BaseViewController.swift in Sources */,
+				CF7A3E401EFDB6FF0055408D /* ParkViewController.swift in Sources */,
+				CFF3CBD41F3CE85300748BAE /* RemoveBikeRequest.swift in Sources */,
+				CF7A3E1D1EFC71530055408D /* LoginRequest.swift in Sources */,
+				CF9B9DAB1EFF092500DA5E01 /* ParkItem.swift in Sources */,
+				E89E20E61F02AB2200A826B1 /* BikeItem.swift in Sources */,
+				CF9B9DB31EFF1EF100DA5E01 /* ShopsNearMeRequest.swift in Sources */,
+				E8E209551F3368D60092AFE7 /* ForgotPasswordViewController.swift in Sources */,
+				CFFDFB071F21540500337474 /* OpeningHoursTableViewCell.swift in Sources */,
+				CF4FF6801F228DF900F00D41 /* AddParkRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF9D44BE1EFC65110064DB66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81B3C011F4C3F8F00D1ADBA /* UserManagerTests.swift in Sources */,
+				E81B3C261F4C834800D1ADBA /* ParkNearMeRequestTests.swift in Sources */,
+				E81B3C1C1F4C7FD600D1ADBA /* SignUpRequestTests.swift in Sources */,
+				E81B3C1E1F4C80B900D1ADBA /* UpdateUserRequestTests.swift in Sources */,
+				E81B3C2B1F4C84D000D1ADBA /* AddBikeRequestTests.swift in Sources */,
+				E81B3C1A1F4C7F1900D1ADBA /* LoginRequestTests.swift in Sources */,
+				E81B3BFF1F4C3DD800D1ADBA /* UserTests.swift in Sources */,
+				E81B3C201F4C817E00D1ADBA /* RecoverPasswordRequestTests.swift in Sources */,
+				E81B3C0C1F4C756F00D1ADBA /* ParkItemTests.swift in Sources */,
+				E81B3C091F4C74B800D1ADBA /* ShopItemTests.swift in Sources */,
+				E81B3C2D1F4C859C00D1ADBA /* RemoveBikeRequestTests.swift in Sources */,
+				E81B3BFD1F4C352400D1ADBA /* AddressTests.swift in Sources */,
+				E81B3C0E1F4C76A400D1ADBA /* BikeParkedItemTests.swift in Sources */,
+				E81B3C121F4C786C00D1ADBA /* BrandingTests.swift in Sources */,
+				E81B3C2F1F4C861300D1ADBA /* ParkBikeRequestTests.swift in Sources */,
+				E81B3C281F4C83C000D1ADBA /* AddParkRequestTests.swift in Sources */,
+				E81B3C171F4C7D1B00D1ADBA /* ReportMissingBikeRequestTests.swift in Sources */,
+				E81B3C231F4C829700D1ADBA /* ShopsNearMeRequestTests.swift in Sources */,
+				E84E7BFF1F5570A50059553B /* BaseTestCase.swift in Sources */,
+				E81B3C311F4C870300D1ADBA /* UnparkBikeRequestTests.swift in Sources */,
+				E81B3C061F4C419C00D1ADBA /* BikeItemTests.swift in Sources */,
+				E81B3C141F4C7A2200D1ADBA /* UtilsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF9D44C91EFC65110064DB66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81EAD7C1F570CA400B5D501 /* BaseUITestCase.swift in Sources */,
+				E81B3C331F4C88E300D1ADBA /* LoginUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF9D44C41EFC65110064DB66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF9D44AD1EFC65110064DB66 /* smartcycle */;
+			targetProxy = CF9D44C31EFC65110064DB66 /* PBXContainerItemProxy */;
+		};
+		CF9D44CF1EFC65110064DB66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF9D44AD1EFC65110064DB66 /* smartcycle */;
+			targetProxy = CF9D44CE1EFC65110064DB66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF9D44B51EFC65110064DB66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF9D44B61EFC65110064DB66 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF9D44BA1EFC65110064DB66 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF9D44BB1EFC65110064DB66 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF7A3E411EFDCFE40055408D /* InHouse */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = InHouse;
+		};
+		CF7A3E421EFDCFE40055408D /* InHouse */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7C39944ED03DF56CA8D066C /* Pods-smartcycle.inhouse.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = smartcycle/smartcycle.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Joao Duarte (T7PE3377SX)";
+				DEVELOPMENT_TEAM = T7PE3377SX;
+				INFOPLIST_FILE = SmartCycle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"GoogleAnalytics\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"Cloudinary\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"DGActivityIndicatorView\"",
+					"-framework",
+					"\"ReachabilitySwift\"",
+					"-framework",
+					"\"SideMenu\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackbox.smartcycle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "39cff28b-ccd1-4141-860e-a4ea6319df9a";
+				PROVISIONING_PROFILE_SPECIFIER = "Smartcycle ad-hoc pro prof";
+				SWIFT_OBJC_BRIDGING_HEADER = SmartCycle/Bridging_Header.h;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = InHouse;
+		};
+		CF7A3E431EFDCFE40055408D /* InHouse */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E3BDBFBA491BF8620058BB6 /* Pods-SmartCycleTests.inhouse.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T7PE3377SX;
+				INFOPLIST_FILE = SmartCycleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackbox.smartcycle.SmartCycleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartcycle.app/smartcycle";
+			};
+			name = InHouse;
+		};
+		CF7A3E441EFDCFE40055408D /* InHouse */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D3D76DD33AD6C76901CB851 /* Pods-SmartCycleUITests.inhouse.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = T7PE3377SX;
+				INFOPLIST_FILE = SmartCycleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackbox.smartcycle.SmartCycleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e16ac3ae-a751-400d-8457-c2b31435f013";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = smartcycle;
+			};
+			name = InHouse;
+		};
+		CF9D44D41EFC65110064DB66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF9D44D51EFC65110064DB66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF9D44D71EFC65110064DB66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7359818CB7EB39451BD48F6 /* Pods-smartcycle.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = smartcycle/smartcycle.entitlements;
+				DEVELOPMENT_TEAM = T7PE3377SX;
+				INFOPLIST_FILE = SmartCycle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"GoogleAnalytics\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"Cloudinary\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"DGActivityIndicatorView\"",
+					"-framework",
+					"\"ReachabilitySwift\"",
+					"-framework",
+					"\"SideMenu\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackbox.smartcycle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "de9b1883-5fc7-4eb9-97c5-434a45dc3acd";
+				PROVISIONING_PROFILE_SPECIFIER = "Smartcycle dev prov prof";
+				SWIFT_OBJC_BRIDGING_HEADER = SmartCycle/Bridging_Header.h;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		CF9D44D81EFC65110064DB66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94905ECE6BA3C2354E32D9A2 /* Pods-smartcycle.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = smartcycle/smartcycle.entitlements;
+				DEVELOPMENT_TEAM = T7PE3377SX;
+				INFOPLIST_FILE = SmartCycle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"GoogleAnalytics\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"Cloudinary\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"DGActivityIndicatorView\"",
+					"-framework",
+					"\"ReachabilitySwift\"",
+					"-framework",
+					"\"SideMenu\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackbox.smartcycle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "de9b1883-5fc7-4eb9-97c5-434a45dc3acd";
+				PROVISIONING_PROFILE_SPECIFIER = "Smartcycle dev prov prof";
+				SWIFT_OBJC_BRIDGING_HEADER = SmartCycle/Bridging_Header.h;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		CF9D44DA1EFC65110064DB66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21585A7EA201C127E6F069CB /* Pods-SmartCycleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T7PE3377SX;
+				INFOPLIST_FILE = SmartCycleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackbox.smartcycle.SmartCycleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartcycle.app/smartcycle";
+			};
+			name = Debug;
+		};
+		CF9D44DB1EFC65110064DB66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F1BA224035D451DA29BFB75 /* Pods-SmartCycleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T7PE3377SX;
+				INFOPLIST_FILE = SmartCycleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackbox.smartcycle.SmartCycleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartcycle.app/smartcycle";
+			};
+			name = Release;
+		};
+		CF9D44DD1EFC65110064DB66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3859BA82AA3CDE90AE22172 /* Pods-SmartCycleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = T7PE3377SX;
+				INFOPLIST_FILE = SmartCycleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackbox.smartcycle.SmartCycleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e16ac3ae-a751-400d-8457-c2b31435f013";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = smartcycle;
+			};
+			name = Debug;
+		};
+		CF9D44DE1EFC65110064DB66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1698C01FD6987FD24CD9704E /* Pods-SmartCycleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = T7PE3377SX;
+				INFOPLIST_FILE = SmartCycleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackbox.smartcycle.SmartCycleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e16ac3ae-a751-400d-8457-c2b31435f013";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = smartcycle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF9D44A91EFC65110064DB66 /* Build configuration list for PBXProject "SmartCycle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF9D44D41EFC65110064DB66 /* Debug */,
+				CF9D44D51EFC65110064DB66 /* Release */,
+				CF7A3E411EFDCFE40055408D /* InHouse */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF9D44D61EFC65110064DB66 /* Build configuration list for PBXNativeTarget "smartcycle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF9D44D71EFC65110064DB66 /* Debug */,
+				CF9D44D81EFC65110064DB66 /* Release */,
+				CF7A3E421EFDCFE40055408D /* InHouse */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF9D44D91EFC65110064DB66 /* Build configuration list for PBXNativeTarget "SmartCycleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF9D44DA1EFC65110064DB66 /* Debug */,
+				CF9D44DB1EFC65110064DB66 /* Release */,
+				CF7A3E431EFDCFE40055408D /* InHouse */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF9D44DC1EFC65110064DB66 /* Build configuration list for PBXNativeTarget "SmartCycleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF9D44DD1EFC65110064DB66 /* Debug */,
+				CF9D44DE1EFC65110064DB66 /* Release */,
+				CF7A3E441EFDCFE40055408D /* InHouse */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF9D44A61EFC65110064DB66 /* Project object */;
+}
